@@ -1,8 +1,8 @@
 from transformers import TFAutoModel
 from tensorflow.keras import Model
 from tensorflow.keras.layers import Dense, Dropout, Concatenate
-from util import argmax_label_matrix
-from vlsp_process import PolarityMapping
+from aspect_base_vietnamese.util import argmax_label_matrix
+from aspect_base_vietnamese.vlsp_process import PolarityMapping
 import numpy as np
 class VLSP2018Task(Model):
     def __init__(self, model, aspect_category_names, optimizer, **kwargs):
