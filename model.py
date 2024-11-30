@@ -5,14 +5,14 @@ from aspect_base_vietnamese.util import argmax_label_matrix
 from aspect_base_vietnamese.vlsp_process import PolarityMapping
 import numpy as np
 class VLSP2018Task(Model):
-    def __init__(self, model, aspect_category_names, optimizer, **kwargs):
-        super(VLSP2018Task, self).__init__(**kwargs)
+    def __init__(self, model, aspect_category_names, optimizer):
+        super(VLSP2018Task, self).__init__()
         self.aspect_category_names = aspect_category_names
         self.pre_bert = TFAutoModel.from_pretrained(model, output_hidden_states=True)
         self.last_4_hidden_states = Concatenate(name='last_4_hidden_states')
         self.dropout = Dropout(0.2)
         self.dense_layers = [
-            Dense(4, activation='softmax', name=label.replace('#', '-').replace('&', '_').replace('/', '-')) 
+            Dense(4, activation='softmax', name=label.replace('#', '-').replace('&', '_')) 
             for label in self.aspect_category_names
         ]
 
