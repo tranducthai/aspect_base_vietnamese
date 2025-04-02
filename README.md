@@ -6,7 +6,8 @@ This work aimed to solve the **Aspect-based Sentiment Analysis** (ABSA) problem 
 2. **Sentiment Polarity Classification** (SPC): Classify the Sentiment Polarity (`Positive`, `Negative`, `Neutral`) of each **`Aspect#Category`** pair.
 
 ## II. The VLSP 2018 Aspect-based Sentiment Analysis Dataset
-<img width="502" alt="image" src="https://github.com/user-attachments/assets/4d7be8fd-e15e-4e8b-bc15-8551bc0ae699" />
+<img width="489" alt="image" src="https://github.com/user-attachments/assets/8abf21fa-0b72-4e49-ae01-5c1097aaad15" />
+
 
 ## III. Model Development
 <img width="772" alt="image" src="https://github.com/user-attachments/assets/06bdb4ae-65ba-4e5a-825c-c59ea1bb6595" />
